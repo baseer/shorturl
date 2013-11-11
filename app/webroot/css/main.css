@@ -1,0 +1,11 @@
+@font-face {
+	font-family: Dekar;
+	src: url("/fonts/Dekar.otf") format("opentype");
+}
+@font-face {
+	font-family: "Dekar Light";
+	src: url("/fonts/Dekar Light.otf") format("opentype");
+}
+body {
+	font-family: Dekar,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
