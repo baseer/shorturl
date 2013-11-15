@@ -6,6 +6,63 @@
 	font-family: "Dekar Light";
 	src: url("/fonts/Dekar Light.otf") format("opentype");
 }
-body {
+body, h1, h2, h3 {
 	font-family: Dekar,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #808285;
+}
+h1 {
+	font-size: 30px;
+}
+h1.site-title {
+	padding-bottom: 6px;
+}
+h1.site-title .glyphicon {
+	color: #999;
+	left: 9px;
+	font-size: 23px;
+}
+h2 {
+	font-size: 24px;
+	margin-top: 15px;
+}
+h1.blue, h2.blue, h3.blue, a {
+	color: #00AEEF;
+}
+h1.underline, h2.underline, h3.underline {
+	border-bottom: 1px solid #bcbec0;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.light-gray-bg {
+	background-color: #f1f2f2;
+}
+/*#UrlIndexForm .input-group-addon, #UrlIndexForm .form-control, #UrlIndexForm .input-group-addon, #UrlIndexForm .input-group-btn {
+	border: 1px solid #fff;
+}*/
+#UrlIndexForm .input.text {
+	background-color: white;
+	border-radius: 3px;
+	margin-bottom: 12px;
+}
+#UrlIndexForm .input.text .glyphicon {
+	background-color: #e0e1e2;
+	top: 0;
+}
+#shorten-form-container {
+	padding: 15px;
+	margin: auto -15px;
+	box-shadow: 0px 0px 0 1px #fff, 4px 4px 0px 0px #ccc;
+}
+@media (min-width: 992px) {
+	#shorten-form-container {
+		border-radius: 5px;
+		margin: auto 0;
+	}
+	h1 {
+		margin-bottom: 40px;
+	}
+}
+#shorten-form-container h2 {
+	margin-top: 0px;
 }

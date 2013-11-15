@@ -25,7 +25,8 @@
  * Here, we are connecting '/' (base path) to controller called 'Url',
  * its action called 'index'.
  */
-	Router::connect('/', array('controller' => 'url', 'action' => 'index'));
+	Router::connect('/', array('controller' => 'Urls', 'action' => 'index'));
+	Router::connect('/*', array('controller' => 'Urls', 'action' => 'go'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
