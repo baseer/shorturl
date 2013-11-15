@@ -1,6 +1,6 @@
 shorturl
 =============
-Shorten your URLs.
+Shorten your URLs: http://shorturl.baseer.ca
 
 Technologies Used
 =================
