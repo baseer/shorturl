@@ -52,17 +52,36 @@ h1.underline, h2.underline, h3.underline {
 #shorten-form-container {
 	padding: 15px;
 	margin: auto -15px;
-	box-shadow: 0px 0px 0 1px #fff, 4px 4px 0px 0px #ccc;
 }
 @media (min-width: 992px) {
 	#shorten-form-container {
-		border-radius: 5px;
 		margin: auto 0;
 	}
 	h1 {
 		margin-bottom: 40px;
 	}
 }
+@media (min-width: 768px) {
+	#shorten-form-container {
+		border-radius: 5px;
+		box-shadow: 0px 0px 0 1px #fff, 4px 4px 0px 0px #ccc;
+	}
+}
+@media (max-width: 767px) {
+	#shorten-form-container {
+		box-shadow: 0px 0px 0 1px #fff, 0px 4px 0px 0px #ccc;
+	}
+}
 #shorten-form-container h2 {
 	margin-top: 0px;
+}
+#shortened-url-modal {
+	text-align: center;
+}
+#shortened-url-modal-label {
+	margin-top: 0;
+}
+#shortened-url {
+	margin-bottom: 0;
+	font-size: 16px;
 }

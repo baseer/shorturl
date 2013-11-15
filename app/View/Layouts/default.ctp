@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 		<?php
-		echo $this->Session->flash();
+		echo $this->Session->flash('default');
 		echo $this->fetch('content');
 		?>
 	</div>

@@ -14,7 +14,12 @@
 			<h2 class="blue">Paste your long URL here:</h2>
 			<?php
 			echo $this->Form->create('Url');
-			$submit = $this->Js->submit('Shorten', array('class'=>'btn btn-primary', 'div'=>array('class'=>'input-group-btn')));
+			$submit = $this->Js->submit('Shorten',
+				array(	'class'		=> 'btn btn-primary',
+						'div'		=> array('class'=>'input-group-btn'),
+						'type'		=> 'json',
+						'success'	=> '$("#shortened-url").html(data.shortened_url);$("#shortened-url-modal").modal();'));
+
 			echo $this->Form->input('url',
 				array(	'label'	=>	array('class'=>"input-group-addon glyphicon glyphicon-link", 'text'=>false),
 						'class'	=> 'form-control',
@@ -26,3 +31,14 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="shortened-url-modal" tabindex="-1" role="dialog" aria-labelledby="shortened-url-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h1 id="shortened-url-modal-label" class="modal-title blue">Your new shortened URL is:</h1>
+      </div>
+      <div id="shortened-url" class="modal-body"></div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
